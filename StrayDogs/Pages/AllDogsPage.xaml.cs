@@ -12,19 +12,24 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using StrayDogs.Pages;
 
-namespace StrayDogs
+namespace StrayDogs.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AllDogsPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AllDogsPage : Page
     {
-        public MainWindow()
+        public AllDogsPage()
         {
             InitializeComponent();
-            navFr.NavigationService.Navigate(new AllDogsPage());
+            List<string> list = new List<string>() { "Первый", "Second", "Third", "Fourht", "Five" };
+            DogsLv.ItemsSource = list;
+
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
