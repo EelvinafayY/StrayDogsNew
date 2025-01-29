@@ -1,13 +1,13 @@
-﻿<Page x:Class="StrayDogs.Pages.RegistrationPage"
+﻿<Page x:Class="StrayDogs.Pages.EditEmployeePage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:StrayDogs.Pages"
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:StrayDogs.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Регистрация">
+      Title="Редактирование сотрудника">
 
     <Grid Background="#F4F7EE">
         <Grid.RowDefinitions>
@@ -31,10 +31,10 @@
 
         <Viewbox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4">
             <Canvas Width="600" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBlock Text="РЕГИСТРАЦИЯ" Foreground="#16343C" FontSize="30" Opacity="0.9"
+                <TextBlock Text="Редактирование сотрудника" Foreground="#16343C" FontSize="30" Opacity="0.9"
                    FontWeight="Bold"
-                   HorizontalAlignment="Center"
-                   VerticalAlignment="Center" Canvas.Left="187" Canvas.Top="-10"></TextBlock>
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center" Canvas.Left="91" Canvas.Top="-10"></TextBlock>
             </Canvas>
         </Viewbox>
 
@@ -131,7 +131,7 @@ ValueMember="Key" HorizontalAlignment="Left" Canvas.Left="63" VerticalAlignment=
             </Canvas>
         </Viewbox>
 
-        <Viewbox Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3">
+        <Viewbox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3">
             <Canvas Width="600" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <materialDesign:AutoSuggestBox
 materialDesign:HintAssist.Hint="Логин"
@@ -159,7 +159,7 @@ ValueMember="Key" HorizontalAlignment="Left" Canvas.Left="63" VerticalAlignment=
             </Canvas>
         </Viewbox>
 
-        <Viewbox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3">
+        <Viewbox Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3">
             <Canvas Width="600" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <materialDesign:AutoSuggestBox
 materialDesign:HintAssist.Hint="Пароль"
@@ -253,9 +253,25 @@ Width="200">
   Style="{StaticResource MaterialDesignRaisedDarkButton}"
   ToolTip="MaterialDesignRaisedDarkButton with Round Corners" Margin="226,-23,-226,23">
                         <TextBlock
-    Text="ЗАРЕГИСТРИРОВАТЬСЯ" />
+    Text="Добавить сотрудника" />
                     </Button>
                 </Grid>
+            </Canvas>
+        </Viewbox>
+
+        <Viewbox Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3">
+            <Canvas Width="600" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ComboBox
+  HorizontalAlignment="Left" Canvas.Left="63" VerticalAlignment="Center" Width="438"
+  materialDesign:HintAssist.Hint="Роль"
+  Style="{StaticResource MaterialDesignOutlinedComboBox}">
+                    ,
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
             </Canvas>
         </Viewbox>
     </Grid>

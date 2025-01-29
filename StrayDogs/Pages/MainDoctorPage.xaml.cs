@@ -12,19 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using StrayDogs.Pages;
 
-namespace StrayDogs
+namespace StrayDogs.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainDoctorPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainDoctorPage : Page
     {
-        public MainWindow()
+        public MainDoctorPage()
         {
             InitializeComponent();
-            navFr.NavigationService.Navigate(new MainDoctorPage());
+            List<string> list = new List<string>() { "Первый", "Second", "Third", "Fourht", "Five" };
+            PriemsLv.ItemsSource = list;
         }
+        private void StajersTI_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+
     }
 }

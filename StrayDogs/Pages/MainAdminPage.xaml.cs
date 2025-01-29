@@ -38,7 +38,7 @@ namespace StrayDogs.Pages
 
         private void probaI_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new ProbaPage());
+            //NavigationService.Navigate(new ProbaPage());
         }
 
         private void Lv_SelectionChanged(object sender, SelectionChangedEventArgs e)

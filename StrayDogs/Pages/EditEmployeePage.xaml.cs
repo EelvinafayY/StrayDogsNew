@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace StrayDogs.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ProbaPage.xaml
+    /// Логика взаимодействия для EditEmployeePage.xaml
     /// </summary>
-    public partial class ProbaPage : Page
+    public partial class EditEmployeePage : Page
     {
-        public ProbaPage()
+        public EditEmployeePage()
         {
             InitializeComponent();
         }
