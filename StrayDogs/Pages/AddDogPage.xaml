@@ -28,7 +28,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-
+        
+        
         <Viewbox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4">
             <Canvas Width="600" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="Добавление собаки" Foreground="#16343C" FontSize="30" Opacity="0.9"

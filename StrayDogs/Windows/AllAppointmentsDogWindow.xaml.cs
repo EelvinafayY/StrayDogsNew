@@ -10,21 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using StrayDogs.Pages;
 
-namespace StrayDogs
+namespace StrayDogs.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для AllAppointmentsDogWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AllAppointmentsDogWindow : Window
     {
-        public MainWindow()
+        public AllAppointmentsDogWindow()
         {
             InitializeComponent();
-            navFr.NavigationService.Navigate(new EditDogPage());
         }
     }
 }
