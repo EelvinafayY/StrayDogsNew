@@ -12,19 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using StrayDogs.Pages;
 
-namespace StrayDogs
+namespace StrayDogs.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для EditDogPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EditDogPage : Page
     {
-        public MainWindow()
+        public EditDogPage()
         {
             InitializeComponent();
-            navFr.NavigationService.Navigate(new AddDogPage());
         }
     }
 }
