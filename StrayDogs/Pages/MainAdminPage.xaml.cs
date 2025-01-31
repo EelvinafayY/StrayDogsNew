@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StrayDogs.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -75,6 +76,12 @@ namespace StrayDogs.Pages
                     VolierLv.ScrollIntoView(VolierLv.SelectedItem);
                 }
             }
+        }
+
+        private void AddAviaryBT_Click(object sender, RoutedEventArgs e)
+        {
+            GuestApplicationWindow guestApplicationWindow = new GuestApplicationWindow();
+            guestApplicationWindow.ShowDialog();
         }
     }
 }

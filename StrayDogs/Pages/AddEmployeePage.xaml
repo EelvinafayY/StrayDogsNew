@@ -163,12 +163,13 @@ ValueMember="Key" HorizontalAlignment="Left" Canvas.Left="63" VerticalAlignment=
             <Canvas Width="600" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <materialDesign:AutoSuggestBox
 materialDesign:HintAssist.Hint="Пароль"
+                   
 materialDesign:TextFieldAssist.HasClearButton="True"
 DropDownElevation="Dp0"
 Style="{StaticResource MaterialDesignOutlinedAutoSuggestBox}"
 Suggestions="{Binding AutoSuggestBox2Suggestions}"
 Text="{Binding AutoSuggestBox2Text, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
-ValueMember="Key" HorizontalAlignment="Left" Canvas.Left="63" VerticalAlignment="Center" Width="438">
+ValueMember="Key" HorizontalAlignment="Center" Canvas.Left="63" VerticalAlignment="Top" Width="438" Canvas.Top="-15">
                     <materialDesign:AutoSuggestBox.ItemTemplate>
                         <DataTemplate>
                             <DockPanel>
@@ -265,7 +266,7 @@ Width="200">
   HorizontalAlignment="Left" Canvas.Left="63" VerticalAlignment="Center" Width="438"
   materialDesign:HintAssist.Hint="Роль"
   Style="{StaticResource MaterialDesignOutlinedComboBox}">
-                   ,
+                    ,
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <TextBlock/>

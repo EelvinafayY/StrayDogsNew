@@ -18,84 +18,14 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="75"/>
+            <ColumnDefinition Width="1"/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <materialDesign:Card Grid.Column="0" Grid.Row="0" Grid.RowSpan="6">
-            <TabControl
-    VerticalContentAlignment="Top"
-    materialDesign:ColorZoneAssist.Mode="PrimaryMid"
-    Style="{StaticResource MaterialDesignNavigationRailTabControl}">
-                <TabItem x:Name="StajersTI" MouseDoubleClick="probaI_MouseDoubleClick">
-                    <TabItem.Header>
-                        <StackPanel
-      Width="auto"
-      Height="auto">
-                            <materialDesign:PackIcon
-        Width="24"
-        Height="24"
-        HorizontalAlignment="Center"
-        Kind="AccountSupervisor" />
-                            <TextBlock
-        HorizontalAlignment="Center"
-        Text="Стажеры" />
-                        </StackPanel>
-                    </TabItem.Header>
-                </TabItem>
-                <TabItem>
-                    <TabItem.Header>
-                        <StackPanel
-          Width="auto"
-          Height="auto">
-                            <materialDesign:PackIcon
-            Width="24"
-            Height="24"
-            HorizontalAlignment="Center"
-            Kind="ClockOutline" />
-                            <TextBlock
-            HorizontalAlignment="Center"
-            Text="Recent" />
-                        </StackPanel>
-                    </TabItem.Header>
-                </TabItem>
-                <TabItem>
-                    <TabItem.Header>
-                        <StackPanel
-          Width="auto"
-          Height="auto">
-                            <materialDesign:PackIcon
-            Width="24"
-            Height="24"
-            HorizontalAlignment="Center"
-            Kind="Images" />
-                            <TextBlock
-            HorizontalAlignment="Center"
-            Text="Photos" />
-                        </StackPanel>
-                    </TabItem.Header>
-                </TabItem>
-                <TabItem>
-                    <TabItem.Header>
-                        <StackPanel
-          Width="auto"
-          Height="auto">
-                            <materialDesign:PackIcon
-            Width="24"
-            Height="24"
-            HorizontalAlignment="Center"
-            Kind="MusicBoxMultiple" />
-                            <TextBlock
-            HorizontalAlignment="Center"
-            Text="Sounds" />
-                        </StackPanel>
-                    </TabItem.Header>
-                </TabItem>
-            </TabControl>
-        </materialDesign:Card>
+       
 
         <Viewbox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Margin="30, 0,0,40">
             <Canvas Width="600" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -331,6 +261,7 @@ ToolTip="MaterialDesignFloatingActionMiniDarkButton">
                 <Grid
   Width="200">
                     <Button
+                        Click="AddAviaryBT_Click"
                         Margin="0 30 0 0"
                         x:Name="AddAviaryBT"
                         Background="#16343C"

@@ -16,25 +16,13 @@ using System.Windows.Shapes;
 namespace StrayDogs.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AllDogsPage.xaml
+    /// Логика взаимодействия для GuestDogPage.xaml
     /// </summary>
-    public partial class AllDogsPage : Page
+    public partial class GuestDogPage : Page
     {
-        public AllDogsPage()
+        public GuestDogPage()
         {
             InitializeComponent();
-            List<string> list = new List<string>() { "Первый", "Second", "Third", "Fourht", "Five" };
-            DogsLv.ItemsSource = list;
-
-        }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

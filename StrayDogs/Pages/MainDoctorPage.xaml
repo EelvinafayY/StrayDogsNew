@@ -20,84 +20,14 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="1"/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <materialDesign:Card Grid.Column="0" Grid.Row="0" Grid.RowSpan="6">
-                <TabControl 
-    VerticalContentAlignment="Top" 
-    materialDesign:ColorZoneAssist.Mode="PrimaryMid" 
-    Style="{StaticResource MaterialDesignNavigationRailTabControl}">
-                    <TabItem x:Name="StajersTI" MouseDoubleClick="StajersTI_MouseDoubleClick">
-                        <TabItem.Header>
-                            <StackPanel 
-      Width="auto" 
-      Height="auto">
-                                <materialDesign:PackIcon 
-        Width="24" 
-        Height="24" 
-        HorizontalAlignment="Center" 
-        Kind="AccountSupervisor" />
-                                <TextBlock 
-        HorizontalAlignment="Center" 
-        Text="Стажеры" />
-                            </StackPanel>
-                        </TabItem.Header>
-                    </TabItem>
-                    <TabItem>
-                        <TabItem.Header>
-                            <StackPanel 
-          Width="auto" 
-          Height="auto">
-                                <materialDesign:PackIcon 
-            Width="24" 
-            Height="24" 
-            HorizontalAlignment="Center" 
-            Kind="ClockOutline" />
-                                <TextBlock 
-            HorizontalAlignment="Center" 
-            Text="Recent" />
-                            </StackPanel>
-                        </TabItem.Header>
-                    </TabItem>
-                    <TabItem>
-                        <TabItem.Header>
-                            <StackPanel 
-          Width="auto" 
-          Height="auto">
-                                <materialDesign:PackIcon 
-            Width="24" 
-            Height="24" 
-            HorizontalAlignment="Center" 
-            Kind="Images" />
-                                <TextBlock 
-            HorizontalAlignment="Center" 
-            Text="Photos" />
-                            </StackPanel>
-                        </TabItem.Header>
-                    </TabItem>
-                    <TabItem>
-                        <TabItem.Header>
-                            <StackPanel 
-          Width="auto" 
-          Height="auto">
-                                <materialDesign:PackIcon 
-            Width="24" 
-            Height="24" 
-            HorizontalAlignment="Center" 
-            Kind="MusicBoxMultiple" />
-                                <TextBlock 
-            HorizontalAlignment="Center" 
-            Text="Sounds" />
-                            </StackPanel>
-                        </TabItem.Header>
-                    </TabItem>
-                </TabControl>
-            </materialDesign:Card>
+
             <Viewbox Grid.Column="1" Grid.ColumnSpan="3" Margin="30,4,0,156" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center">
                 <Canvas Width="600" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <TextBlock Text="Здравствуйте, Имя врача" Foreground="#16343C" FontSize="28" Opacity="0.9"/>
